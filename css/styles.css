@@ -561,12 +561,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--page-color);
+    margin-bottom: 16px;
 }
 
 .footer-subscribe-form {
     display: flex;
     gap: 24px;
-    margin-top: 24px;
 }
 
 .footer-subscribe-input {
@@ -577,13 +577,13 @@ img {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.48px;
     outline: transparent;
     border-radius: 4px;
     border: 1px solid var(--page-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-subscribe-input::placeholder {
@@ -600,7 +600,7 @@ img {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    min-width: 165px;
     border-radius: 4px;
     border: none;
     background: var(--logo-color);
@@ -617,6 +617,10 @@ img {
 .footer-subscribe-btn:focus,
 .footer-subscribe-btn:hover {
     background-color: var(--button-color);
+}
+
+.footer-subscribe-icon {
+    margin-left: 16px;
 }
 
 .filter {
@@ -772,6 +776,7 @@ img {
 }
 
 .modal {
+    padding: 72px 24px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -831,8 +836,6 @@ img {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    margin-top: 72px;
-    margin-left: 24px;
     margin-bottom: 16px;
 }
 
@@ -842,7 +845,6 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    margin-left: 24px;
 }
 
 .modal-form-field {
